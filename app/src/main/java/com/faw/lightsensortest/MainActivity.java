@@ -7,6 +7,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -34,6 +35,7 @@ public class MainActivity extends Activity {
         lightLevel = (TextView) findViewById(R.id.light_level);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+        Log.d("Test for remote", "Just a test");
         sensorManager.registerListener(listener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
 
 
