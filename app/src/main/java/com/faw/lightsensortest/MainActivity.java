@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         Log.d("Test for remote", "Just a test1");
         lightLevel = (TextView) findViewById(R.id.light_level);
+        Log.d("Test for remote", "Just a test2");
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         Log.d("Test for remote", "Just a test");
